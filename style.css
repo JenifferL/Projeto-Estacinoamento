@@ -1,0 +1,197 @@
+body, h1, h2, p, label, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos globais da página */
+body {
+    background-image: url('./imagens/redes-de-estacionamento.jpg');
+    background-size: cover; /* Para cobrir todo o elemento body */
+    background-repeat: no-repeat; 
+}
+
+header {
+    background-color: #566a7e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input[type="text"] {
+    width: 96%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input.invalid {
+    border: 1px solid red;
+    background-color: #ffcccc; 
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #566a7e;
+    color: #fff;
+}
+
+.body2 {
+    background-color: #5cb85c; /* Fundo verde */
+    text-align: center;
+    padding: 100px;
+}
+
+.titulo {
+    font-size: 36px; 
+    color: black; 
+    margin-bottom: 20px;
+}
+
+.link {
+    color: rgb(6, 11, 83);
+    text-decoration: underline;
+}
+
+.main2{
+    background-color: #73ee77; /* Fundo verde */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px;
+    margin: 205px auto 207px auto;
+    border: 2px solid #2d770b;
+
+}
+
+.main3 {
+    padding: 20px;
+}
+
+.vagas-reservadas {
+    background-color: #FF6B6B; /* Vermelho */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Adiciona espaço entre as seções */
+    display: grid;
+    grid-template-columns: 1fr; /* Cada seção em sua própria grid */
+}
+
+/* Estilo para a seção de vagas disponíveis */
+.vagas-disponiveis {
+    background-color: #6BC7FF; /* Azul */
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr; /* Cada seção em sua própria grid */
+}
+
+/* Estilo para as listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.header2{
+    font-size: 24px;
+    margin: 0;
+    text-align: center; 
+}
+/* Estilo para o menu de navegação */
+nav {
+    background-color: #282b46; /* Fundo cinza claro */
+    padding: 10px;
+    border-radius: 10px; /* Borda redonda */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid transparent; /* Borda transparente inicial */
+    border-radius: 5px; /* Borda redonda nos links */
+    padding: 5px 10px;
+    transition: background-color 0.3s, border-color 0.3s; /* Transição de cores */
+}
+
+nav a:hover {
+    background-color: #6BC7FF; /* Fundo azul ao passar o mouse */
+    border-color: #333; /* Borda preta ao passar o mouse */
+    color: #333; /* Texto preto ao passar o mouse */
+}
+
+.titulo2 {
+    font-size: 27px;
+    color: black; 
+    margin-bottom: 20px;
+    
+}
+
+button.excluir {
+    background-color: #FF6B6B; /* Cor de fundo vermelha mais clara */
+    color: white;
+    border: 2px solid #C43B3B; /* Borda vermelha mais escura */
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; /* Transição de cores */
+}
+
+button.excluir:hover {
+    background-color: #C43B3B; /* Cor de fundo mais escura no hover */
+    border-color: #761E1E; /* Borda mais escura no hover */
+    flex: 0;
+}
+
