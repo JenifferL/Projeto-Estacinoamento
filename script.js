@@ -64,33 +64,36 @@ function verificarCamposPreenchidos() {
     return true;
 }
 
-document.getElementById("salvarButton").addEventListener("click", function () {
-    // Verificar se todos os campos estão preenchidos
-    if (verificarCamposPreenchidos()) {
-        // Obter os valores do formulário
-        const placa = document.getElementById("placa").value;
-        const proprietario = document.getElementById("proprietario").value;
-        const apartamento = document.getElementById("apartamento").value;
-        const bloco = document.getElementById("bloco").value;
-        const modelo = document.getElementById("modelo").value;
-        const cor = document.getElementById("cor").value;
-        const vaga = document.getElementById("vaga").value;
+botaoSalvar = document.getElementById("salvar")
+if (botaoSalvar != null) {
+    document.getElementById("salvar").addEventListener("click", function () {
+        // Verificar se todos os campos estão preenchidos
+        if (verificarCamposPreenchidos()) {
+            // Obter os valores do formulário
+            const placa = document.getElementById("placa").value;
+            const proprietario = document.getElementById("proprietario").value;
+            const apartamento = document.getElementById("apartamento").value;
+            const bloco = document.getElementById("bloco").value;
+            const modelo = document.getElementById("modelo").value;
+            const cor = document.getElementById("cor").value;
+            const vaga = document.getElementById("vaga").value;
 
-        // Exibir os valores no console
-        console.log("Placa do Veículo:", placa);
-        console.log("Nome do Proprietário:", proprietario);
-        console.log("Número do Apartamento:", apartamento);
-        console.log("Bloco do Apartamento:", bloco);
-        console.log("Modelo do Veículo:", modelo);
-        console.log("Cor do Veículo:", cor);
-        console.log("Número da Vaga de Estacionamento:", vaga);
+            // Exibir os valores no console
+            console.log("Placa do Veículo:", placa);
+            console.log("Nome do Proprietário:", proprietario);
+            console.log("Número do Apartamento:", apartamento);
+            console.log("Bloco do Apartamento:", bloco);
+            console.log("Modelo do Veículo:", modelo);
+            console.log("Cor do Veículo:", cor);
+            console.log("Número da Vaga de Estacionamento:", vaga);
 
-        // Exibir a mensagem de confirmação em um pop-up
-        alert("Cadastro realizado com sucesso! Vaga Reservada.");
-        setTimeout(redirecionarParaListagem, 1000); 
-    }
-    
-});
+            // Exibir a mensagem de confirmação em um pop-up
+            alert("Cadastro realizado com sucesso! Vaga Reservada.");
+            setTimeout(redirecionarParaListagem, 1000); 
+        }
+
+    });
+}
 
 function redirecionarParaListagem() {
     window.location.href = "CadastroRealizado.html";
